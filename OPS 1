@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class car{
+	public:
+		string brand,model;
+		int milegae=0;
+		//class function to drive the car
+		void drive(int distance){
+			milegae+=distance;
+		}
+		void show_data(){
+			cout<<"brand:"<<brand<<endl;
+			
+			cout<<"model:"<<model<<endl;
+			cout<<"distance driven"<<milegae<<endl;
+		}
+	
+	
+};
+int main(){
+	
+	car my_car1;
+	car my_car2;
+	//intializing varible of my_car
+	my_car1.brand="honda";
+	my_car1.model="accord";
+	my_car1.drive(50);
+	my_car2.brand="toyto";
+	my_car2.model="corolla";
+	my_car2.drive(100);
+	//display object varible
+	cout<<"showing the details of object 1"<<endl;
+	my_car1.show_data();
+	cout<<"show the detalis of object 2"<<endl;
+	my_car2.show_data();
+	return 0;
+}
