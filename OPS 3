@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class a{
+	public:
+		int car_age;
+		string model;
+		a(){
+	
+			model="honda";
+		}
+	void show(){
+		cout<<car_age;
+		cout<<model;
+	}
+};
+class b{
+	public:
+void show(){
+}
+	a a1;	
+
+
+	
+};
+int main(){
+	b b1;
+	b1.a1.car_age=45;
+	cout<<b1.a1.car_age;
+}
