@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class student{
+	public:
+		int roll_number;
+		int age;
+	public:
+		student(){
+			roll_number=15;
+			age=17;
+			
+		}
+};
+class a:public student{
+	public:
+	string name;
+	a():student(){
+		name="khan";
+	}
+		
+};
+int main(){
+	
+	a a1;
+	student s1;
+	cout<<s1.age<<endl;
+	cout<<s1.roll_number<<endl;
+	cout<<a1.name<<endl;
+}
